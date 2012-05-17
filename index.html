@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>Roulette</title>
+</head>
+
+<body>
+
+<h1>Roulette</h1>
+
+<textarea id="input-area" cols="40" rows="15">My text area
+With two elements
+Maybe even more</textarea>
+
+<div id="mirrored-text">
+This should be mirrored
+</div>
+
+<input type="button" onClick="roulette.core.startroulette();"
+value="start" />
+
+
+<div id="current-item">current item</div>
+
+<input type="button" onClick="roulette.core.stoproulette();"
+value="stop" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="resources/js/roulette.js"></script>
+
+<script type="text/javascript">
+roulette.core.init();
+</script>
+
+</body>
+
+</html>
