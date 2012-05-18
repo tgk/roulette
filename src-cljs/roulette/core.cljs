@@ -25,7 +25,7 @@
 (defn ^:export init []
   (.log js/console "Init starting")
   (mirror-text)
-  (jq/bind input-area :keypress mirror-text))
+  (jq/bind input-area :input mirror-text))
 
 ;; Running the roulette
 

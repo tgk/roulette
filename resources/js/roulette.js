@@ -2577,7 +2577,7 @@ function wd() {
 ca("roulette.core.init", function() {
   console.log("Init starting");
   wd.call(h);
-  return qd.call(h, sd, "\ufdd0'keypress", wd)
+  return qd.call(h, sd, "\ufdd0'input", wd)
 });
 var xd = nd.call(h, "\ufdd0'#current-item"), yd = Gc.call(h, h);
 function zd() {
