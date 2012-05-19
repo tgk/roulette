@@ -529,7 +529,7 @@ function Qa(a, c) {
 }
 o = Qa.prototype;
 o.h = function(a) {
-  return F.call(h, a)
+  return E.call(h, a)
 };
 o.v = function() {
   return function(a, c, d) {
@@ -1033,7 +1033,7 @@ function Ra(a, c) {
 function wb(a, c) {
   return a ^ c + 2654435769 + (a << 6) + (a >> 2)
 }
-function F(a) {
+function E(a) {
   return S.call(h, function(a, d) {
     return wb.call(h, a, Ya.call(h, d))
   }, Ya.call(h, J.call(h, a)), L.call(h, a))
@@ -1046,7 +1046,7 @@ function xb(a, c, d, e) {
 }
 o = xb.prototype;
 o.h = function(a) {
-  return F.call(h, a)
+  return E.call(h, a)
 };
 o.A = f;
 o.k = function(a, c) {
@@ -1070,7 +1070,7 @@ function yb(a) {
 }
 o = yb.prototype;
 o.h = function(a) {
-  return F.call(h, a)
+  return E.call(h, a)
 };
 o.A = f;
 o.k = function(a, c) {
@@ -1114,7 +1114,7 @@ function Ab(a, c, d) {
 o = Ab.prototype;
 o.j = aa();
 o.h = function(a) {
-  return F.call(h, a)
+  return E.call(h, a)
 };
 o.e = function(a, c) {
   return Ra.call(h, a, c)
@@ -1211,7 +1211,7 @@ o.j = function(a) {
   return I.call(h, Bb.call(h, a))
 };
 o.h = function(a) {
-  return F.call(h, a)
+  return E.call(h, a)
 };
 o.e = function(a, c) {
   return Ra.call(h, a, c)
@@ -1343,9 +1343,9 @@ var Eb = function Db(c) {
 }(), V = function() {
   var a = h, c = function() {
     function a(d, i, j, n, p, r) {
-      var E = h;
-      q(r) && (E = H(Array.prototype.slice.call(arguments, 5), 0));
-      return c.call(this, d, i, j, n, p, E)
+      var F = h;
+      q(r) && (F = H(Array.prototype.slice.call(arguments, 5), 0));
+      return c.call(this, d, i, j, n, p, F)
     }
     function c(a, d, e, n, p, r) {
       d = G.call(h, d, G.call(h, e, G.call(h, n, G.call(h, p, Eb.call(h, r)))));
@@ -1361,14 +1361,14 @@ var Eb = function Db(c) {
   }(), a = function(a, e, g, i, j, n) {
     switch(arguments.length) {
       case 2:
-        var p = a, r = e, E = p.b;
-        return u(p.a) ? u(Cb.call(h, r, E + 1) <= E) ? p.apply(p, R.call(h, r)) : p.a(r) : p.apply(p, R.call(h, r));
+        var p = a, r = e, F = p.b;
+        return u(p.a) ? u(Cb.call(h, r, F + 1) <= F) ? p.apply(p, R.call(h, r)) : p.a(r) : p.apply(p, R.call(h, r));
       case 3:
-        return p = a, r = Gb.call(h, e, g), E = p.b, u(p.a) ? u(Cb.call(h, r, E) <= E) ? p.apply(p, R.call(h, r)) : p.a(r) : p.apply(p, R.call(h, r));
+        return p = a, r = Gb.call(h, e, g), F = p.b, u(p.a) ? u(Cb.call(h, r, F) <= F) ? p.apply(p, R.call(h, r)) : p.a(r) : p.apply(p, R.call(h, r));
       case 4:
-        return p = a, r = Gb.call(h, e, g, i), E = p.b, u(p.a) ? u(Cb.call(h, r, E) <= E) ? p.apply(p, R.call(h, r)) : p.a(r) : p.apply(p, R.call(h, r));
+        return p = a, r = Gb.call(h, e, g, i), F = p.b, u(p.a) ? u(Cb.call(h, r, F) <= F) ? p.apply(p, R.call(h, r)) : p.a(r) : p.apply(p, R.call(h, r));
       case 5:
-        return p = a, r = Gb.call(h, e, g, i, j), E = p.b, u(p.a) ? u(Cb.call(h, r, E) <= E) ? p.apply(p, R.call(h, r)) : p.a(r) : p.apply(p, R.call(h, r));
+        return p = a, r = Gb.call(h, e, g, i, j), F = p.b, u(p.a) ? u(Cb.call(h, r, F) <= F) ? p.apply(p, R.call(h, r)) : p.a(r) : p.apply(p, R.call(h, r));
       default:
         return c.apply(this, arguments)
     }
@@ -1409,8 +1409,8 @@ function Jb(a) {
 var W = function() {
   function a(a, c, d, g) {
     return new U(h, k, function() {
-      var r = I.call(h, c), E = I.call(h, d), fa = I.call(h, g);
-      return u(u(r) ? u(E) ? fa : E : r) ? G.call(h, a.call(h, J.call(h, r), J.call(h, E), J.call(h, fa)), e.call(h, a, K.call(h, r), K.call(h, E), K.call(h, fa))) : h
+      var r = I.call(h, c), F = I.call(h, d), fa = I.call(h, g);
+      return u(u(r) ? u(F) ? fa : F : r) ? G.call(h, a.call(h, J.call(h, r), J.call(h, F), J.call(h, fa)), e.call(h, a, K.call(h, r), K.call(h, F), K.call(h, fa))) : h
     })
   }
   function c(a, c, d) {
@@ -1427,17 +1427,17 @@ var W = function() {
   }
   var e = h, g = function() {
     function a(d, e, g, i, fa) {
-      var Ob = h;
-      q(fa) && (Ob = H(Array.prototype.slice.call(arguments, 4), 0));
-      return c.call(this, d, e, g, i, Ob)
+      var Sb = h;
+      q(fa) && (Sb = H(Array.prototype.slice.call(arguments, 4), 0));
+      return c.call(this, d, e, g, i, Sb)
     }
     function c(a, d, g, i, j) {
       return e.call(h, function(c) {
         return V.call(h, a, c)
-      }, function Hc(a) {
+      }, function Pc(a) {
         return new U(h, k, function() {
           var c = e.call(h, I, a);
-          return u(Hb.call(h, Jb, c)) ? G.call(h, e.call(h, J, c), Hc.call(h, e.call(h, K, c))) : h
+          return u(Hb.call(h, Jb, c)) ? G.call(h, e.call(h, J, c), Pc.call(h, e.call(h, K, c))) : h
         })
       }.call(h, N.call(h, j, i, g, d)))
     }
@@ -1487,12 +1487,12 @@ function Mb(a, c) {
     return d.call(h, a, c)
   })
 }
-var Pb = function Nb(c) {
+var Ob = function Nb(c) {
   return new U(h, k, function() {
     var d = I.call(h, c);
     return u(d) ? Fb.call(h, d, Nb.call(h, d)) : h
   })
-}, Qb = function() {
+}, Pb = function() {
   function a(a) {
     return new U(h, k, function() {
       return G.call(h, a, c.call(h, a))
@@ -1508,7 +1508,7 @@ var Pb = function Nb(c) {
     }
     b("Invalid arity: " + arguments.length)
   }
-}(), Rb = function() {
+}(), Qb = function() {
   function a(a, d) {
     return new U(h, k, function() {
       var i = I.call(h, a), j = I.call(h, d);
@@ -1546,8 +1546,8 @@ var Pb = function Nb(c) {
   c.a = d.a;
   return c
 }();
-function Sb(a, c) {
-  return Mb.call(h, 1, Rb.call(h, Qb.call(h, a), c))
+function Rb(a, c) {
+  return Mb.call(h, 1, Qb.call(h, Pb.call(h, a), c))
 }
 function Tb(a) {
   return function d(a, g) {
@@ -1676,7 +1676,7 @@ function ec(a, c, d, e, g) {
 }
 o = ec.prototype;
 o.h = function(a) {
-  return F.call(h, a)
+  return E.call(h, a)
 };
 o.s = function() {
   return function(a, c, d) {
@@ -1829,7 +1829,7 @@ function oc(a, c, d) {
 }
 o = oc.prototype;
 o.h = function(a) {
-  return F.call(h, a)
+  return E.call(h, a)
 };
 o.s = function() {
   return function(a, c, d) {
@@ -1900,7 +1900,7 @@ function qc(a, c, d) {
 }
 o = qc.prototype;
 o.h = function(a) {
-  return F.call(h, a)
+  return E.call(h, a)
 };
 o.s = function() {
   return function(a, c, d) {
@@ -2017,7 +2017,7 @@ function uc(a, c) {
 }
 o = uc.prototype;
 o.h = function(a) {
-  return F.call(h, a)
+  return E.call(h, a)
 };
 o.s = function() {
   return function(a, c, d) {
@@ -2094,7 +2094,7 @@ function zc(a, c) {
   return u(d === h) ? h : u(B.call(h, O.call(h, d), 1)) ? J.call(h, d) : gc.call(h, d)
 }
 function Y(a, c, d, e, g, i) {
-  return Fb.call(h, X([c]), Tb.call(h, Sb.call(h, X([d]), W.call(h, function(c) {
+  return Fb.call(h, X([c]), Tb.call(h, Rb.call(h, X([d]), W.call(h, function(c) {
     return a.call(h, c, g)
   }, i))), X([e]))
 }
@@ -2286,7 +2286,7 @@ var Gc = function() {
   a.a = c.a;
   return a
 }();
-function Ic(a, c) {
+function Hc(a, c) {
   var d = a.Q;
   u(d) && !u(d.call(h, c)) && b(Error(T.call(h, "Assert failed: ", "Validator rejected reference state", "\n", Ec.call(h, Wa(C("\ufdd1'validate", "\ufdd1'new-value"), Pa("\ufdd0'line", 3282))))));
   d = a.state;
@@ -2294,29 +2294,29 @@ function Ic(a, c) {
   Oa.call(h, a, d, c);
   return c
 }
-var Jc = function() {
+var Ic = function() {
   var a = h, c = function() {
     function a(c, d, i, j, n, p) {
       var r = h;
       q(p) && (r = H(Array.prototype.slice.call(arguments, 5), 0));
-      return Ic.call(h, c, V.call(h, d, c.state, i, j, n, r))
+      return Hc.call(h, c, V.call(h, d, c.state, i, j, n, r))
     }
     a.b = 5;
     a.a = function(a) {
       var c = J(a), d = J(L(a)), j = J(L(L(a))), n = J(L(L(L(a)))), p = J(L(L(L(L(a))))), a = K(L(L(L(L(a)))));
-      return Ic.call(h, c, V.call(h, d, c.state, j, n, p, a))
+      return Hc.call(h, c, V.call(h, d, c.state, j, n, p, a))
     };
     return a
   }(), a = function(a, e, g, i, j, n) {
     switch(arguments.length) {
       case 2:
-        return Ic.call(h, a, e.call(h, a.state));
+        return Hc.call(h, a, e.call(h, a.state));
       case 3:
-        return Ic.call(h, a, e.call(h, a.state, g));
+        return Hc.call(h, a, e.call(h, a.state, g));
       case 4:
-        return Ic.call(h, a, e.call(h, a.state, g, i));
+        return Hc.call(h, a, e.call(h, a.state, g, i));
       case 5:
-        return Ic.call(h, a, e.call(h, a.state, g, i, j));
+        return Hc.call(h, a, e.call(h, a.state, g, i, j));
       default:
         return c.apply(this, arguments)
     }
@@ -2329,7 +2329,7 @@ var Jc = function() {
 Gc.call(h, function() {
   return pc(["\ufdd0'parents", "\ufdd0'descendants", "\ufdd0'ancestors"], {"\ufdd0'parents":pc([], {}), "\ufdd0'descendants":pc([], {}), "\ufdd0'ancestors":pc([], {})})
 }.call(h));
-var Kc = function() {
+var Jc = function() {
   return function(a, c, d) {
     switch(arguments.length) {
       case 2:
@@ -2360,7 +2360,7 @@ var Kc = function() {
     b("Invalid arity: " + arguments.length)
   }
 }();
-function Lc(a, c) {
+function Kc(a, c) {
   for(var d = new t, e = a.length, g = 0;;) {
     if(u(B.call(h, e, g))) {
       return d.toString()
@@ -2370,17 +2370,17 @@ function Lc(a, c) {
     g += 1
   }
 }
-;var Mc = /([^\s\.#]+)(?:#([^s\.#]+))?(?:\.([^\s#]+))?/, Nc;
+;var Lc = /([^\s\.#]+)(?:#([^s\.#]+))?(?:\.([^\s#]+))?/, Mc;
 a: {
-  for(var Oc = ["&", "<", ">", '"'], Pc = ["&amp;", "&lt;", "&gt;", "&quot;"], Qc = Oc.length, Rc = 0, Sc = rc;;) {
+  for(var Nc = ["&", "<", ">", '"'], Oc = ["&amp;", "&lt;", "&gt;", "&quot;"], Qc = Nc.length, Rc = 0, Sc = rc;;) {
     if(u(Rc < Qc)) {
-      var Tc = Rc + 1, Uc = Va.call(h, Sc, Oc[Rc], Pc[Rc]), Rc = Tc, Sc = Uc
+      var Tc = Rc + 1, Uc = Va.call(h, Sc, Nc[Rc], Oc[Rc]), Rc = Tc, Sc = Uc
     }else {
-      Nc = Sc;
+      Mc = Sc;
       break a
     }
   }
-  Nc = void 0
+  Mc = void 0
 }
 var Vc;
 a: {
@@ -2404,7 +2404,7 @@ function ad() {
   return B.call(h, "\ufdd0'xml", "\ufdd0'xml")
 }
 function bd(a) {
-  return Lc.call(h, $c.call(h, a), Nc)
+  return Kc.call(h, $c.call(h, a), Mc)
 }
 function cd() {
   return u(ad.call(h)) ? " />" : ">"
@@ -2429,7 +2429,7 @@ function gd(a) {
     a = kb.call(h, c);
     return u(a) ? a : ib.call(h, c)
   }())) && b(T.call(h, c, " is not a valid tag name"));
-  var d = yc.call(h, Mc, $c.call(h, c));
+  var d = yc.call(h, Lc, $c.call(h, c));
   P.call(h, d, 0, h);
   var e = P.call(h, d, 1, h), g = P.call(h, d, 2, h), d = P.call(h, d, 3, h), g = pc(["\ufdd0'id", "\ufdd0'class"], {"\ufdd0'id":g, "\ufdd0'class":u(d) ? d.replace(".", " ") : h}), d = J.call(h, a);
   return u(bb.call(h, d)) ? X([e, tc.call(h, g, d), L.call(h, a)]) : X([e, g, a])
@@ -2522,10 +2522,43 @@ o.call = function() {
     b("Invalid arity: " + arguments.length)
   }
 }();
-function od(a, c) {
+var od = function() {
+  function a(a, e) {
+    var g = h;
+    q(e) && (g = H(Array.prototype.slice.call(arguments, 1), 0));
+    return c.call(this, a, g)
+  }
+  function c(a, c) {
+    var g = P.call(h, c, 0, h), i = P.call(h, c, 1, h);
+    return a.hide(g, i)
+  }
+  a.b = 1;
+  a.a = function(a) {
+    var e = J(a), a = K(a);
+    return c.call(this, e, a)
+  };
+  return a
+}(), pd = function() {
+  function a(a, e) {
+    var g = h;
+    q(e) && (g = H(Array.prototype.slice.call(arguments, 1), 0));
+    return c.call(this, a, g)
+  }
+  function c(a, c) {
+    var g = P.call(h, c, 0, h), i = P.call(h, c, 1, h);
+    return a.show(g, i)
+  }
+  a.b = 1;
+  a.a = function(a) {
+    var e = J(a), a = K(a);
+    return c.call(this, e, a)
+  };
+  return a
+}();
+function qd(a, c) {
   return a.html(c)
 }
-var pd = function() {
+var rd = function() {
   function a(a, e) {
     var g = h;
     q(e) && (g = H(Array.prototype.slice.call(arguments, 1), 0));
@@ -2542,17 +2575,37 @@ var pd = function() {
   };
   return a
 }();
-function qd(a, c, d) {
+function sd(a, c, d) {
   return a.bind(wc.call(h, c), d)
 }
-;function rd(a) {
-  return Kc.call(h, a, "\n")
+;var td = nd.call(h, "\ufdd0'#input-area"), ud = nd.call(h, "\ufdd0'#mirrored-text"), vd = nd.call(h, "\ufdd0'#configuration-view"), wd = nd.call(h, "\ufdd0'#current-item"), xd = nd.call(h, "\ufdd0'#roulette-view"), yd = nd.call(h, "\ufdd0'#stop-button-view"), zd = nd.call(h, "\ufdd0'#redo-button-view");
+function Ad() {
+  od.call(h, vd);
+  od.call(h, xd);
+  od.call(h, yd);
+  return od.call(h, zd)
 }
-var sd = nd.call(h, "\ufdd0'#input-area");
-function td() {
-  return rd.call(h, pd.call(h, sd))
+function Bd() {
+  Ad.call(h);
+  return pd.call(h, vd)
 }
-function ud(a) {
+function Cd() {
+  Ad.call(h);
+  pd.call(h, xd);
+  return pd.call(h, yd)
+}
+function Dd() {
+  Ad.call(h);
+  pd.call(h, xd);
+  return pd.call(h, zd)
+}
+function Ed(a) {
+  return Jc.call(h, a, "\n")
+}
+function Fd() {
+  return Ed.call(h, rd.call(h, td))
+}
+function Gd(a) {
   return T.call(h, "<ul", "", ">", V.call(h, T, function() {
     return function d(a) {
       return new U(h, k, function() {
@@ -2570,38 +2623,41 @@ function ud(a) {
     }.call(h, a)
   }()), "</ul>")
 }
-var vd = nd.call(h, "\ufdd0'#mirrored-text");
-function wd() {
-  return od.call(h, vd, ud.call(h, td.call(h)))
+function Hd() {
+  return qd.call(h, ud, Gd.call(h, Fd.call(h)))
 }
 ca("roulette.core.init", function() {
-  console.log("Init starting");
-  wd.call(h);
-  return qd.call(h, sd, "\ufdd0'input", wd)
+  Bd.call(h);
+  Hd.call(h);
+  return sd.call(h, td, "\ufdd0'input", Hd)
 });
-var xd = nd.call(h, "\ufdd0'#current-item"), yd = Gc.call(h, h);
-function zd() {
-  return Ic.call(h, yd, Pb.call(h, td.call(h)))
+var Id = Gc.call(h, h);
+function Jd() {
+  return Hc.call(h, Id, Ob.call(h, Fd.call(h)))
 }
-function Ad() {
-  return Jc.call(h, yd, K)
+function Kd() {
+  return Ic.call(h, Id, K)
 }
-function Bd() {
-  return od.call(h, xd, J.call(h, Ad.call(h)))
+function Ld() {
+  return qd.call(h, wd, J.call(h, Kd.call(h)))
 }
-ca("roulette.core.log_next_BANG_", Bd);
-var Cd = Gc.call(h, h);
-ca("roulette.core.startroulette", function() {
-  console.log("Starting roulette");
-  zd.call(h);
-  return Jc.call(h, Cd, function(a) {
+ca("roulette.core.show_next_BANG_", Ld);
+var Md = Gc.call(h, h);
+ca("roulette.core.start", function() {
+  Cd.call(h);
+  Jd.call(h);
+  return Ic.call(h, Md, function(a) {
     u(a) && window.clearTimeout(a);
-    return window.setInterval(Bd, 50)
+    return window.setInterval(Ld, 50)
   })
 });
-ca("roulette.core.stoproulette", function() {
-  return Jc.call(h, Cd, function(a) {
+ca("roulette.core.stop", function() {
+  Dd.call(h);
+  return Ic.call(h, Md, function(a) {
     u(a) && window.clearTimeout(a);
     return h
   })
+});
+ca("roulette.core.change", function() {
+  return Bd.call(h)
 });

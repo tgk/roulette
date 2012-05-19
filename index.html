@@ -6,24 +6,31 @@
 
 <body>
 
+<div id="configuration-view">
 <h1>Roulette</h1>
-
 <textarea id="input-area" cols="40" rows="15">My text area
 With two elements
 Maybe even more</textarea>
-
 <div id="mirrored-text">
 This should be mirrored
 </div>
-
-<input type="button" onClick="roulette.core.startroulette();"
+<input type="button" onClick="roulette.core.start();"
 value="start" />
+</div>
 
-
+<div id="roulette-view">
 <div id="current-item">current item</div>
-
-<input type="button" onClick="roulette.core.stoproulette();"
-value="stop" />
+<div id="stop-button-view" />
+<input type="button" onClick="roulette.core.stop();"
+  value="stop" />
+</div>
+<div id="redo-button-view" />
+<input type="button" onClick="roulette.core.start();"
+  value="start" />
+<input type="button" onClick="roulette.core.change();"
+  value="change" />
+</div>
+</div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="resources/js/roulette.js"></script>
