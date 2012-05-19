@@ -2,34 +2,67 @@
 <html>
 <head>
 <title>Roulette</title>
+<link href="resources/bootstrap/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+
+      #current-item {
+        font-size: 60px;
+        font-weight: bold;
+        height: 200px;
+     }
+
+     .center {
+        text-align: center;
+     }
+</style>
 </head>
 
 <body>
 
+<div class="container">
+
 <div id="configuration-view">
 <h1>Roulette</h1>
+<div class="row">
+<div class="span4">
 <textarea id="input-area" cols="40" rows="15">My text area
 With two elements
 Maybe even more</textarea>
+</div>
+<div class="span4">
 <div id="mirrored-text">
 This should be mirrored
 </div>
-<input type="button" onClick="roulette.core.start();"
+</div>
+</div>
+<input class="btn btn-primary" type="button" onClick="roulette.core.start();"
 value="start" />
 </div>
 
 <div id="roulette-view">
-<div id="current-item">current item</div>
-<div id="stop-button-view" />
-<input type="button" onClick="roulette.core.stop();"
+<div class="row">
+<div class="span12 center" id="current-item">current item</div>
+</div>
+<div class="row">
+<div id="stop-button-view" class="span12 center" />
+<input class="btn btn-danger" type="button" onClick="roulette.core.stop();"
   value="stop" />
 </div>
-<div id="redo-button-view" />
-<input type="button" onClick="roulette.core.start();"
+</div>
+<div class="row">
+<div id="redo-button-view" class="span12 center" />
+<input class="btn btn-primary" type="button" onClick="roulette.core.start();"
   value="start" />
-<input type="button" onClick="roulette.core.change();"
+<input class="btn" type="button" onClick="roulette.core.change();"
   value="change" />
 </div>
+</div>
+</div>
+
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

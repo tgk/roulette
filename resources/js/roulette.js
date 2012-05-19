@@ -2648,7 +2648,7 @@ ca("roulette.core.start", function() {
   Jd.call(h);
   return Ic.call(h, Md, function(a) {
     u(a) && window.clearTimeout(a);
-    return window.setInterval(Ld, 50)
+    return window.setInterval(Ld, 100)
   })
 });
 ca("roulette.core.stop", function() {

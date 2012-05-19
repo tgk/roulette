@@ -81,7 +81,7 @@
 	 (fn [worker-val]
 	   (when worker-val
 	     (.clearTimeout js/window worker-val))
-	   (.setInterval js/window show-next! 50))))
+	   (.setInterval js/window show-next! 100))))
 
 (defn ^:export stop []
   (show-redo)
