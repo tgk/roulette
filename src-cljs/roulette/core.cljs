@@ -34,10 +34,20 @@
   (jq/show roulette-view)
   (jq/show redo-button-view))
 
-;; 
+;; Handling items
+
+(defn extract-href [s]
+  (let [tokens (string/split s " ")]
+    (if (= 0 (.indexOf (last tokens) "http"))
+      {:text (.substring s 0 (- (.-length s) (.-length (last tokens)))) :href (last tokens)}
+      {:text s})))
+
+(defn decorate-item [item]
+  (let [{text :text href :href} (extract-href item)]
+    (if href [:a {:href href} text] text)))
 
 (defn extract-items [s]
-  (string/split s "\n"))
+  (map decorate-item (string/split s "\n")))
 
 (defn current-items []
   (extract-items (jq/val input-area)))
@@ -68,7 +78,7 @@
   (swap! items rest))
 
 (defn ^:export show-next! []
-  (jq/inner current-item (first (change-to-next!))))
+  (jq/inner current-item (hiccups/html (first (change-to-next!)))))
 
 ;; Timer
 
