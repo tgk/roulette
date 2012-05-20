@@ -1436,17 +1436,17 @@ var V = function() {
   }
   var e = h, g = function() {
     function a(d, e, g, i, ga) {
-      var Ub = h;
-      q(ga) && (Ub = G(Array.prototype.slice.call(arguments, 4), 0));
-      return c.call(this, d, e, g, i, Ub)
+      var Wb = h;
+      q(ga) && (Wb = G(Array.prototype.slice.call(arguments, 4), 0));
+      return c.call(this, d, e, g, i, Wb)
     }
     function c(a, d, g, i, j) {
       return e.call(h, function(c) {
         return U.call(h, a, c)
-      }, function Rc(a) {
+      }, function Sc(a) {
         return new T(h, k, function() {
           var c = e.call(h, H, a);
-          return u(Jb.call(h, Lb, c)) ? E.call(h, e.call(h, I, c), Rc.call(h, e.call(h, J, c))) : h
+          return u(Jb.call(h, Lb, c)) ? E.call(h, e.call(h, I, c), Sc.call(h, e.call(h, J, c))) : h
         })
       }.call(h, M.call(h, j, i, g, d)))
     }
@@ -1558,7 +1558,7 @@ var Qb = function Pb(c) {
 function Tb(a, c) {
   return Ob.call(h, 1, Sb.call(h, Rb.call(h, a), c))
 }
-function Vb(a) {
+function Ub(a) {
   return function d(a, g) {
     return new T(h, k, function() {
       var i = H.call(h, a);
@@ -1566,23 +1566,23 @@ function Vb(a) {
     })
   }.call(h, h, a)
 }
-var Wb = function() {
+var Vb = function() {
   var a = h, c = function() {
     function a(c, d, i) {
       var j = h;
       q(i) && (j = G(Array.prototype.slice.call(arguments, 2), 0));
-      return Vb.call(h, U.call(h, V, c, d, j))
+      return Ub.call(h, U.call(h, V, c, d, j))
     }
     a.b = 2;
     a.a = function(a) {
       var c = I(a), d = I(K(a)), a = J(K(a));
-      return Vb.call(h, U.call(h, V, c, d, a))
+      return Ub.call(h, U.call(h, V, c, d, a))
     };
     return a
   }(), a = function(a, e, g) {
     switch(arguments.length) {
       case 2:
-        return Vb.call(h, V.call(h, a, e));
+        return Ub.call(h, V.call(h, a, e));
       default:
         return c.apply(this, arguments)
     }
@@ -1961,7 +1961,7 @@ o.j = function() {
   var a = this;
   if(u(0 < a.n)) {
     var c = gb.call(h, a.t).sort();
-    return Wb.call(h, function(c) {
+    return Vb.call(h, function(c) {
       return V.call(h, ic, Yb.call(h, 2, a.t[c]))
     }, c)
   }
@@ -2103,7 +2103,7 @@ function Ac(a, c) {
   return u(d === h) ? h : u(B.call(h, N.call(h, d), 1)) ? I.call(h, d) : ic.call(h, d)
 }
 function Y(a, c, d, e, g, i) {
-  return Hb.call(h, W([c]), Vb.call(h, Tb.call(h, W([d]), V.call(h, function(c) {
+  return Hb.call(h, W([c]), Ub.call(h, Tb.call(h, W([d]), V.call(h, function(c) {
     return a.call(h, c, g)
   }, i))), W([e]))
 }
@@ -2381,9 +2381,9 @@ function Lc(a, c) {
 }
 ;var Mc = /([^\s\.#]+)(?:#([^s\.#]+))?(?:\.([^\s#]+))?/, Nc;
 a: {
-  for(var Oc = ["&", "<", ">", '"'], Pc = ["&amp;", "&lt;", "&gt;", "&quot;"], Qc = Oc.length, Sc = 0, Tc = sc;;) {
-    if(u(Sc < Qc)) {
-      var Uc = Sc + 1, Vc = Xa.call(h, Tc, Oc[Sc], Pc[Sc]), Sc = Uc, Tc = Vc
+  for(var Oc = ["&", "<", ">", '"'], Pc = ["&amp;", "&lt;", "&gt;", "&quot;"], Qc = Oc.length, Rc = 0, Tc = sc;;) {
+    if(u(Rc < Qc)) {
+      var Uc = Rc + 1, Vc = Xa.call(h, Tc, Oc[Rc], Pc[Rc]), Rc = Uc, Tc = Vc
     }else {
       Nc = Tc;
       break a
@@ -2609,20 +2609,30 @@ function Ed() {
   return qd.call(h, Ad)
 }
 function Fd(a) {
+  return u(0 < a.length) ? decodeURIComponent.call(h, a.substring(1)) : h
+}
+function Gd() {
+  var a = Fd.call(h, location.hash);
+  return u(a) ? rd.call(h, ud, a) : h
+}
+function Hd() {
+  return location.hash = encodeURIComponent.call(h, sd.call(h, ud))
+}
+function Id(a) {
   var c = Kc.call(h, a, " ");
   return u(B.call(h, 0, Wa.call(h, c).indexOf("http"))) ? X(["\ufdd0'text", "\ufdd0'href"], {"\ufdd0'text":a.substring(0, a.length - Wa.call(h, c).length), "\ufdd0'href":Wa.call(h, c)}) : X(["\ufdd0'text"], {"\ufdd0'text":a})
 }
-function Gd(a) {
-  var a = Fd.call(h, a), c = u(ib.call(h, a)) ? U.call(h, Pa, a) : a, a = P.call(h, c, "\ufdd0'text"), c = P.call(h, c, "\ufdd0'href");
+function Jd(a) {
+  var a = Id.call(h, a), c = u(ib.call(h, a)) ? U.call(h, Pa, a) : a, a = P.call(h, c, "\ufdd0'text"), c = P.call(h, c, "\ufdd0'href");
   return u(c) ? W(["\ufdd0'a", X(["\ufdd0'href"], {"\ufdd0'href":c}), a]) : a
 }
-function Hd(a) {
-  return V.call(h, Gd, Kc.call(h, a, "\n"))
+function Kd(a) {
+  return V.call(h, Jd, Kc.call(h, a, "\n"))
 }
-function Id() {
-  return Hd.call(h, sd.call(h, ud))
+function Ld() {
+  return Kd.call(h, sd.call(h, ud))
 }
-function Jd(a) {
+function Md(a) {
   return S.call(h, "<ul", "", ">", U.call(h, S, function() {
     return function d(a) {
       return new T(h, k, function() {
@@ -2640,37 +2650,39 @@ function Jd(a) {
     }.call(h, a)
   }()), "</ul>")
 }
-function Kd() {
-  return rd.call(h, vd, Jd.call(h, Id.call(h)))
+function Nd() {
+  Hd.call(h);
+  return rd.call(h, vd, Md.call(h, Ld.call(h)))
 }
 ca("roulette.core.init", function() {
   Cd.call(h);
-  Kd.call(h);
-  return td.call(h, ud, "\ufdd0'input", Kd)
+  Gd.call(h);
+  Nd.call(h);
+  return td.call(h, ud, "\ufdd0'input", Nd)
 });
-var Ld = Hc.call(h, h);
-function Md() {
-  return Ic.call(h, Ld, Qb.call(h, Id.call(h)))
+var Od = Hc.call(h, h);
+function Pd() {
+  return Ic.call(h, Od, Qb.call(h, Ld.call(h)))
 }
-function Nd() {
-  return Jc.call(h, Ld, J)
+function Qd() {
+  return Jc.call(h, Od, J)
 }
-function Od() {
-  return rd.call(h, xd, S.call(h, jd.call(h, I.call(h, Nd.call(h)))))
+function Rd() {
+  return rd.call(h, xd, S.call(h, jd.call(h, I.call(h, Qd.call(h)))))
 }
-ca("roulette.core.show_next_BANG_", Od);
-var Pd = Hc.call(h, h);
+ca("roulette.core.show_next_BANG_", Rd);
+var Sd = Hc.call(h, h);
 ca("roulette.core.start", function() {
   Dd.call(h);
-  Md.call(h);
-  return Jc.call(h, Pd, function(a) {
+  Pd.call(h);
+  return Jc.call(h, Sd, function(a) {
     u(a) && window.clearTimeout(a);
-    return window.setInterval(Od, 100)
+    return window.setInterval(Rd, 100)
   })
 });
 ca("roulette.core.stop", function() {
   Ed.call(h);
-  return Jc.call(h, Pd, function(a) {
+  return Jc.call(h, Sd, function(a) {
     u(a) && window.clearTimeout(a);
     return h
   })

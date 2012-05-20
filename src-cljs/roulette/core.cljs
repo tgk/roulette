@@ -34,6 +34,19 @@
   (jq/show roulette-view)
   (jq/show redo-button-view))
 
+;; URL parsing and rewrite
+
+(defn parse-url [hash-part]
+  (when (> (.-length hash-part) 0)
+    (js/decodeURIComponent (.substring hash-part 1))))
+
+(defn update-according-to-url []
+  (when-let [new-content (parse-url (.-hash js/location))]
+    (jq/inner input-area new-content)))
+
+(defn update-url-according-to-input []
+  (set! (.-hash js/location) (js/encodeURIComponent (jq/val input-area))))
+
 ;; Handling items
 
 (defn extract-href [s]
@@ -58,12 +71,14 @@
       [:li item])])
 
 (defn mirror-text []
+  (update-url-according-to-input)
   (jq/inner mirrored-text (list-items (current-items))))
 
 ;; Initialise
 
 (defn ^:export init []
   (show-configuration)
+  (update-according-to-url)
   (mirror-text)
   (jq/bind input-area :input mirror-text))
 
