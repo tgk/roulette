@@ -15,6 +15,7 @@
 
       #current-item {
         font-size: 60px;
+        line-height: 60px;
         font-weight: bold;
      }
 
@@ -47,16 +48,15 @@ This should be mirrored
 value="start" />
 </div>
 
+
 <div id="roulette-view">
-<div class="row">
-<div class="span12 center" id="current-item-container"><span id="current-item">[Current item]</span></div>
-</div>
 <div class="row">
 <div id="stop-button-view" class="span12 center" />
 <input class="btn btn-danger" type="button" onClick="roulette.core.stop();"
   value="stop" />
 </div>
 </div>
+
 <div class="row">
 <div id="redo-button-view" class="span12 center" />
 <input class="btn btn-primary" type="button" onClick="roulette.core.start();"
@@ -64,6 +64,10 @@ value="start" />
 <input class="btn" type="button" onClick="roulette.core.change();"
   value="change" />
 </div>
+</div>
+
+<div class="row">
+<div class="span12 center" id="current-item-container"><span id="current-item">[Current item]</span></div>
 </div>
 </div>
 
